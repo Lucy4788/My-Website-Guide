@@ -1,0 +1,256 @@
+body{
+    font-family: 'Tajawal', sans-serif;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+header h1 {
+    font-size: 70px;
+    text-align: left;
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 2px;
+    color: #184d47;
+    margin-left: 5px;
+    opacity: 0.8;
+}
+@media only screen and (max-width: 480px){ /*----------Phone Vertical--------*/
+    body{
+        margin: 0 50px;
+    }
+    header{
+        background-color: hsla(173, 52%, 20%, 30%);
+        top: 0;
+    }
+    header h1{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 0;
+        padding: 10px;
+    }
+}
+
+/*------------------------------COLORS GRID STYLE-------------------------------------*/
+
+.text-styles .heading2,
+.colors h2,
+.fonts h2{
+    font-size: 35px;
+    font-family: 'Satisfy', cursive;
+    color: #bb596b;
+    font-weight: bold;
+    letter-spacing: 3px;;
+}
+.colors{
+    display: grid;
+    width: 100%;
+    grid-template: 100px 100px 100px / repeat(3, 300px);
+    grid-gap: 10px 10px;
+    border: 2px solid gray;
+    padding: 10px;
+    max-width: 60em;
+  
+}
+.colors h2{
+    grid-area: 1/1/span 1/span 3;
+}
+
+.colors .bb596b{
+    background-color: #bb596b;
+}
+.colors .f96d80{
+    background-color: #f96d80;
+}
+.colors .ff9a76{
+    background-color: #ff9a76;
+}
+.colors .ffc4a3{
+    background-color: #ffc4a3;
+    grid-area: 3/1/span 1/2;
+}
+.colors .color p{
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 480px){  /*---------Phone Vertical---------*/
+    .text-styles .heading2,
+    .colors h2,
+    .fonts h2{
+    font-size: 20px;
+    font-family: 'Satisfy', cursive;
+    color: #bb596b;
+    font-weight: bold;
+    letter-spacing: 3px;;
+    }
+    .colors{
+        border: none;
+        width: 80%;
+        grid-template: 40px repeat(4, 50px) / 200px;
+    }
+    .colors .bb596b{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .colors .f96d80{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .colors .ff9a76{
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .colors .ffc4a3{
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .colors .color p{
+        font-size: 8px;
+    }
+}
+/*------------------------------FONTS GRID STYLE-------------------------------------*/
+
+.fonts{
+    display: grid;
+    width: 100%;
+    grid-template: 80px repeat (3, 300px) / 400px 300px 300px;
+    grid-gap: 10px 10px;
+    border: 2px solid gray;
+    margin: 10px 0;
+    padding: 10px;
+    max-width: 60em;
+}
+.fonts h2{
+    grid-area: 1/1/span 1/span 3;
+}
+.fonts .Satisfy{
+    grid-area: 2/1/3/span 1;
+    font-family: 'Satisfy', cursive;
+}
+.fonts .Narrow{
+    grid-area: 2/3/3/4;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.fonts .Kaushan{
+    grid-area: 3/2/span 1/span 1;
+    font-family: 'Kaushan Script', cursive;
+}
+.fonts .Tajawal{
+    font-family: 'Tajawal', sans-serif;
+}
+.fonts .Satisfy a,
+.fonts .Kaushan a,
+.fonts .Narrow a,
+.fonts .Tajawal a{
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px){/*-------Phone Vertical---------*/
+    .fonts .Satisfy p a,
+    .fonts .Kaushan p a,
+    .fonts .Narrow p a,
+    .fonts .Tajawal p a{
+    font-size: 16px;
+    }
+
+    .fonts{
+        display: grid;
+        width: 80%;
+        grid-template: 30px repeat (3, 300px) / repeat(2, 90px);
+        grid-gap: 10px 10px;
+        border: none;
+        border-top: 2px solid hsla(173, 52%, 20%, 30%);
+    }
+    .fonts .Satisfy{
+        grid-area: 2/1/3/2;
+    }
+    .fonts .Tajawal{
+        grid-area: 2/2/3/3;
+    }
+    .fonts .Kaushan{
+        grid-area: 3/1/4/2;
+    }
+    .fonts .Narrow{
+        grid-area: 3/2/4/3;
+    }
+    .fonts .Satisfy,
+    .fonts .Kaushan,
+    .fonts .Narrow,
+    .fonts .Tajawal p{
+        font-size: 12px;
+    }
+}
+/*------------------------------TEXT-STYLES GRID STYLE-------------------------------------*/
+.text-styles{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 30px repeat (3, 100px);
+    grid-row-gap: 5px;
+    border: 2px solid gray;
+    margin: 10px 0;
+    padding: 10px;
+    max-width: 60em;
+}
+
+@media only screen and (max-width: 480px){
+    .text-styles{
+        width: 80%;
+        grid-template: 30px repeat (3, 300px) / repeat(2, 80px);
+        border: none;
+        border-top: 2px solid hsla(173, 52%, 20%, 30%);
+        margin-left: 10px;
+    }
+    .text-styles .text-style-breakdown{
+        font-size: 13px;
+    }
+    .text-styles .head h1{
+        font-size: 23px;
+    }
+    .text-styles .subheading h2{
+        font-size: 18px;
+    }
+    .text-styles .paragraph p{
+        font-size: 16px;
+    }
+
+}
+
+/*------------------------------FOOTER STYLE-------------------------------------*/
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+footer ul li{
+    list-style: none;
+    float: right;
+    margin: 0 15px;
+}
+footer p{
+    font-weight: bold;
+    font-size: 13px;
+    float: left;
+    margin-left: 5px;
+}
+footer{
+    background-color: hsla(173, 52%, 20%, 30%);
+    display: inline-block;
+    width: 95%;
+    margin-left: 0;
+    margin-right: 0;
+}
+@media only screen and (max-width: 480px){
+    footer p{
+        font-size: 10px;
+        padding-top: 15px;
+    }
+    footer ul li{
+        list-style: none;
+        float: right;
+        margin: 5px;
+    }
+    footer{
+        width: 100%;
+    }
+
+}
