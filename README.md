@@ -1,4 +1,4 @@
-<p1> Responsive Website Guide </p1>
+<h1> Responsive Website Guide </h1>
 <h2> Project goals </h2>
 <p>Giving detailed guidelines for buidling a website, with following keypoints:</p>
 <ul>
